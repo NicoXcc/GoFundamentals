@@ -17,8 +17,8 @@ var (
 )
 
 func main() {
-	fmt.Println("Name is ", name, "and is if type ", reflect.TypeOf(name))
+	fmt.Println("Name is ", name, "and is of type ", reflect.TypeOf(name))
 	fmt.Println("Module is ", module, " and of type ", reflect.TypeOf(module))
-	fmt.Println("Name is ", _name, "and is if type ", reflect.TypeOf(_name))
+	fmt.Println("Name is ", _name, "and is of type ", reflect.TypeOf(_name))
 	fmt.Println("Module is ", _module, " and of type ", reflect.TypeOf(_module))
 }

@@ -1,8 +1,12 @@
 package main
 
+import _ "net/http/pprof"
+
 import (
 	"fmt"
 	"time"
+	"net/http"
+	"log"
 )
 
 // For <expression>
@@ -30,7 +34,7 @@ import (
 
 func main() {
 	// being idiomatic and initialized timer inside for loop
-	for timer := 10; timer > 0; timer-- {
+	for timer := 3; timer > 0; timer-- {
 		fmt.Println("time left :", timer)
 		time.Sleep(1 * time.Second)
 	}
@@ -43,5 +47,15 @@ func main() {
 	// if we donot want the index then we ignore it with blank '_' identifier
 	for _, i := range course {
 		fmt.Println(i)
+	}
+
+	for true {
+		fmt.Println("conditional looping")
+		break
+	}
+
+	for {
+		fmt.Println("loop forever")
+		break
 	}
 }

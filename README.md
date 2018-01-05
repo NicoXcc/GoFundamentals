@@ -7,3 +7,5 @@ self learning Go thorugh code
 ```
 $ go run 01hello_world.go
 ```
+
+reference: http://www.golangbootcamp.com/book
